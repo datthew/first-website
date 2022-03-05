@@ -4,23 +4,59 @@
 }
 
 body{
-    background-color: grey;
+    background-color: rgb(31, 31, 31);
+    min-height: 200vh;
   }
   
   .banner {
-    background-image: url(assets/img/banner-image.jpg);
+
+    background-image: url(assets/img/black.png);
     background-size: cover;
-    background-position: center center;
-    height: 600px;
+    background-repeat: no-repeat;
+    height: 400px;
     width: 100%;
-    background-attachment: fixed, fixed, fixed; 
+    background-attachment: fixed;
+  }
+
+  .banner2 {
+    opacity: 0;
+    background-image: url(assets/img/blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  .banner3 {
+    background-image: url(assets/img/red.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  .banner4 {
+    background-image: url(assets/img/black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  .banner2:hover{
+    transition: 1s ease;
+    opacity: 1;
   }
 
   header {
     width: 100%;
     height: 100px;
     background-color: green;
-
+    position: sticky;
+    top: 0;
   }
 
   nav {
@@ -30,7 +66,6 @@ body{
   .navbar a{
     text-decoration: none;
     font-size: 17px;
-    font-weight: 500;
     letter-spacing: 4px;
     color: white;
 
@@ -50,13 +85,7 @@ body{
     color: white;
   } 
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-  }
-  
-  .sticky + .section {
-    padding-top: 102px;
+  .section {
+    padding: 16px;
+    text-align: center;
   }
