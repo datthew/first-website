@@ -5,19 +5,27 @@
 
 body{
     background-color: grey;
-    height: 2000px;
   }
   
+  .banner {
+    background-image: url(assets/img/banner-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    background-attachment: fixed, fixed, fixed; 
+  }
+
   header {
     width: 100%;
     height: 100px;
-    background-color: #333;
-    position: fixed;
+    background-color: green;
+
   }
 
   nav {
     line-height: 100px;
-  }
+  } 
 
   .navbar a{
     text-decoration: none;
@@ -30,34 +38,25 @@ body{
     margin: 0 1px;
 
     background-color: aqua;
-
   }
 
   .navbar a:hover {
     background-color: white;
     color: black;
-
   }
   
   .navbar a.active {
     background-color: black;
     color: white;
-  }
+  } 
 
-  .banner {
-    background-image: url(assets/img/banner-image.jpg);
-    background-size: cover;
-    background-position: center center;
-    top: 100px;
-    height: 600px;
-    width: 100%;
+  .sticky {
     position: fixed;
-  }
-
-  .section {
-    position: sticky;
-    background-color: yellow;
+    top: 0;
     width: 100%;
-    height: 100px;
 
+  }
+  
+  .sticky + .section {
+    padding-top: 102px;
   }
