@@ -5,24 +5,28 @@
 
 body{
     background-color: rgb(31, 31, 31);
-    min-height: 200vh;
+
   }
   
-  .banner {
+  .banner-box {
+    height: 400px;
+    width: 100%;
+  }
 
+  .banner {
     background-image: url(assets/img/black.png);
     background-size: cover;
-    background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     background-attachment: fixed;
+    
   }
 
-  .banner2 {
+  /* .banner2 {
     opacity: 0;
+    transition: 2s ease;
     background-image: url(assets/img/blue.png);
     background-size: cover;
-    background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     background-attachment: fixed;
@@ -31,7 +35,6 @@ body{
   .banner3 {
     background-image: url(assets/img/red.png);
     background-size: cover;
-    background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     background-attachment: fixed;
@@ -40,16 +43,14 @@ body{
   .banner4 {
     background-image: url(assets/img/black.png);
     background-size: cover;
-    background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     background-attachment: fixed;
-  }
+  }  */
 
-  .banner2:hover{
-    transition: 1s ease;
+  .banner2:hover {
     opacity: 1;
-  }
+  } 
 
   header {
     width: 100%;
@@ -88,4 +89,5 @@ body{
   .section {
     padding: 16px;
     text-align: center;
+    background-color: antiquewhite;
   }
