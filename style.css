@@ -8,43 +8,31 @@ body{
   }
   
   .banner-box {
-    height: 400px;
+    height: 300px;
     width: 100%;
   }
 
   .banner {
-    background-image: url(assets/img/black.png);
+
+    background-image: url(assets/img/nocolor.png);
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
   }
 
-  /* .banner2 {
+   .banner2 {
     opacity: 0;
     transition: 2s ease;
-    background-image: url(assets/img/blue.png);
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    background-attachment: fixed;
-  }
 
-  .banner3 {
-    background-image: url(assets/img/red.png);
+    background-image: url(assets/img/color.png);
     background-size: cover;
-    height: 400px;
+    background-position: center;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
-  }
-
-  .banner4 {
-    background-image: url(assets/img/black.png);
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    background-attachment: fixed;
-  }     */
+  } 
 
   .banner2:hover {
     opacity: 1;
@@ -82,8 +70,8 @@ body{
   }
   
   .navbar a.active {
+    color: white;
     background-color: rgb(236, 63, 66);
-    color: black;
     border: 3px inset rgb(150, 63, 66);
   } 
 
