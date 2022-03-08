@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-body{
+body, html{
     background-color: #1f1f1f;
+    font-family: "Segoe UI", sans-serif;
   }
   
   .banner-box {
@@ -54,12 +55,11 @@ body{
 
   .navbar a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: large;
     color: white;
-    padding: 20px 20px; 
-    border-radius: 6px;
-    background-color: rgb(63, 140, 236);
-    border: 3px outset rgb(63, 98, 236);
+    padding: 28px 20px; 
+
+ ;
   }
 
   .navbar a:hover{ 
@@ -67,23 +67,57 @@ body{
   }
 
   .navbar a:hover > i{ 
-
     color: rgb(236, 63, 66);
   }
 
   .navbar a.active {
     color: white;
-    background-color: rgb(236, 63, 66);
-    border: 3px inset rgb(150, 63, 66);
+
+
   } 
+
   .navbar a.active > i{
     color: rgb(63, 140, 236);
   }
 
+  /* --------------------------------------------------------------------- */
 
-  .section {
+  .main {
+    padding: 16px;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+  }
+
+  .article {
     padding: 16px;
     text-align: center;
     color: white;
-    background-color: rgb(20, 20, 20);
+    /* background-color: blue; */
+  }
+
+  .section {
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    /* background-color: green; */
+  }
+
+  .section a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+    padding: 20px 20px; 
+    border-radius: 6px;
+    background-color: rgb(63, 140, 236);
+    border: 3px outset rgb(63, 98, 236);
+  }
+
+  .section a:hover{ 
+    opacity: 0.7;
+  }
+
+  .section a:hover > i{ 
+    color: rgb(236, 63, 66);
   }
