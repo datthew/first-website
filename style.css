@@ -62,11 +62,11 @@ body, html{
 
   .navbar a:hover{ 
     background-color: rgb(50, 50, 50);
-    /* color:rgb(63, 140, 236); */
+    color:rgb(63, 140, 236);
   }
 
   .navbar a:hover > i{ 
-    color: rgb(63, 140, 236);
+    color: rgb(236, 63, 66);
   }
 
   .navbar a.active {
