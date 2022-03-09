@@ -94,12 +94,12 @@ body, html{
   }
 
   .section1 {
-    text-align: left;
+    text-align: center;
     font-size: 24px;
     color: white;
     margin: 2%;
     display: inline-flex;
-    background-color: blue; 
+    /* background-color: blue;  */
   }
 
   .section2 {
