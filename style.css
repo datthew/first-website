@@ -90,7 +90,7 @@ body, html{
     color: white;
     padding: 12%;
     line-height: 40px;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
   }
 
   .section1 {
@@ -98,15 +98,15 @@ body, html{
     font-size: 24px;
     color: white;
     margin: 2%;
-    padding: 15px;
-    background-color: blue;
+    display: inline-flex;
+    background-color: blue; 
   }
 
   .section2 {
     margin: 2%;
     padding: 15px;
     color: white;
-    background-color: green;
+    /* background-color: green; */
   }
 
   .section2 a{
