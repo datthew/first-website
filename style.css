@@ -138,3 +138,18 @@
   .art-navbar a.active > i{
     color: rgb(63, 140, 236);
   }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+  
+  .column img {
+    width: 100%;
+  }
