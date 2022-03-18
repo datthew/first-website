@@ -98,42 +98,51 @@
 
   .art-header {
     width: 100%;
-    height: 46px;
-    text-align: center;
+    height: 45px;
 
     position: sticky;
     top: 80px;
+    z-index: 2;
+  }
 
+  .art-navbar{
+    height: 100%;
     background-color: rgb(25, 25, 25);
-    border-top: 1px solid rgb(125, 125, 125);
-    border-bottom: 1px solid rgb(125, 125, 125);
-    z-index: 1;
+    border-top: 1px solid rgb(125, 125, 125); 
+    border-bottom: 1px solid rgb(125, 125, 125); 
   }
 
-  .art-navbar a{
-    text-decoration: none;
+  .art-navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .art-navbar ul li{
+    list-style: none;
     font-size: large;
-    line-height: 47px;  
+    line-height: 43px; 
     color: white;
-    padding: 11px 20px; 
+    padding: 0 20px;
+    cursor: pointer;
   }
 
-  .art-navbar a:hover{ 
+  .art-navbar li:hover{ 
     background-color: rgb(50, 50, 50);
     color:rgb(63, 140, 236);
   }
 
-  .art-navbar a:hover > i{ 
+  .art-navbar li:hover > i{ 
     color: rgb(236, 63, 66);
   }
 
-  .art-navbar a.active {
+  .art-navbar ul li.active {
     color: rgb(236, 63, 66);
-    border-top: 1px solid rgb(236, 63, 66);
-    border-bottom: 1px solid rgb(63, 140, 236);
+    border-bottom: 4px solid rgb(63, 140, 236);
   } 
 
-  .art-navbar a.active > i{
+  .art-navbar li.active > i{
     color: rgb(63, 140, 236);
   }
 
@@ -146,9 +155,9 @@
   .image img{
     width: 100%;
     height: 100%;
-    /* z-index: 0; */
+     
   }
 
-  .image:hover {
-    opacity: 0.7;
+  .image img:hover {
+    opacity: 0.7; 
   }
