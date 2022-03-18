@@ -68,6 +68,8 @@
 
     </div>
 
+<div class="gallery-box">
+
     <div class="gallery">
 
         <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
@@ -80,27 +82,47 @@
         <div class="image" data-item="animation"><img src="/assets/img/gallery/8.jpg"></div>
         <div class="image" data-item="animation"><img src="/assets/img/gallery/9.jpg"></div>
         <div class="image" data-item="animation"><img src="/assets/img/gallery/10.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/3.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/4.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/5.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/6.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/7.jpg"></div>
+        <div class="image" data-item="animation"><img src="/assets/img/gallery/8.jpg"></div>
+        <div class="image" data-item="animation"><img src="/assets/img/gallery/9.jpg"></div>
+        <div class="image" data-item="animation"><img src="/assets/img/gallery/10.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/3.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/4.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/5.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/6.jpg"></div>
+        <div class="image" data-item="ddd"><img src="/assets/img/gallery/7.jpg"></div>
+        <div class="image" data-item="animation"><img src="/assets/img/gallery/8.jpg"></div>
 
     </div> 
+
+</div>
 
     <script>
         let list = document.querySelectorAll('.list');
         let image = document.querySelectorAll('.image');
 
-        for(let i = 0; i<list.length;i++){
-            list[i].addEventListener('click', function(){
-                for(let j = 0; j<list.length;j++){
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) {
                     list[j].classList.remove('active');
                 }
                 this.classList.add('active');
 
                 let dataFilter = this.getAttribute('data-filter');
 
-                for( let k = 0;k<image.length;k++){
+                for (let k = 0; k < image.length; k++) {
                     image[k].classList.remove('active');
                     image[k].classList.add('hide');
 
-                    if(image[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                    if (image[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
                         image[k].classList.remove('hide');
                         image[k].classList.add('active');
                     }
