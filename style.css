@@ -231,6 +231,19 @@
       background-color: rgb(20, 20, 20);
       /* border-bottom: none; */
     } 
+
+    .game-image img {
+      width: 200px;
+      height: 200px;
+      float: left;
+     
+    }
+
+    .game-info {
+      background-color: green;
+      margin-left: 220px;
+      text-align: left;
+    }
     
     .content {
       padding: 0 18px;
