@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body, html{
+body, html {
     background-color: #1f1f1f;
     font-family: "Segoe UI", sans-serif;    
   }
@@ -52,7 +52,7 @@ body, html{
     z-index: 3;
   }
 
-  .navbar a{
+  .navbar a {
     text-decoration: none;
     font-size: large;
     line-height: 80px;  
@@ -60,12 +60,12 @@ body, html{
     padding: 28px 20px; 
   }
 
-  .navbar a:hover{ 
+  .navbar a:hover { 
     background-color: rgb(50, 50, 50);
     color:rgb(63, 140, 236);
   }
 
-  .navbar a:hover > i{ 
+  .navbar a:hover > i { 
     color: rgb(236, 63, 66);
   }
 
@@ -75,6 +75,6 @@ body, html{
     border-bottom: 4px solid rgb(236, 63, 66);
   } 
 
-  .navbar a.active > i{
+  .navbar a.active > i {
     color: rgb(63, 140, 236);
   }
