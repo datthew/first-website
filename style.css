@@ -272,12 +272,55 @@
     }
     
     .content {
-      padding: 0 25px;
+      
       max-height: 0;
       transition: max-height 0.3s ease-out;
       overflow: hidden;
       color: white;
-      background-color: rgb(20, 20, 20);
+      /* background-color: rgb(20, 20, 20); */
+      background-color: rgb(197, 197, 197);
       border-bottom: 2px solid rgb(125, 125, 125);
+    }
+
+    .content-description {
+      float: left;
+      background-color: green;
+      padding: 20px 10px 20px 50px;
+      font-size: 24px;
+    }
+
+    .content-info {
+      padding-top: 40px;     
+    }
+
+    .content-info p {
+      padding: 2px;     
+    }
+
+    .download-button {     
+      float: left;
+      padding-right: 10px;
+    }
+
+    .download-button button {
+      font-size: 18px;
+      background-color: DodgerBlue;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .download-info {    
+      text-align: left;
+      float: left;
+      color: white;
+    }
+
+    .download-info2 {    
+      text-align: left;
+      float: left;
+      padding-left: 10px;
+      color: rgb(168, 168, 168);
     }
   
