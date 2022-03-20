@@ -60,49 +60,105 @@
 
         <div class="game-image"><img src="/assets/img/gallery/1.jpg"></div>
 
-        <div class="game-info"> 
+        <div class="game-name">
+
             <h1>Game 1</h1>
-            <p>Genre</p>
-            <p>Plattform</p>
+
+            <div class="game-info">
+                <p>Genre:</p>
+                <p>Plattform:</p>
+            </div>
+
+            <div class="game-info2">
+                <p>Action, Adventure</p>
+                <p>Windows <i class="fa fa-windows"></i> , macOS <i class="fa fa-apple"></i></p>
+            </div>
+
         </div>
 
     </button>
-
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. <br>Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore
+            et
+            dolore magna aliqua. <br>Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex
             ea commodo consequat.</p>
     </div>
 
-    <button type="button" class="collapsible"> Game 2</button>
+    <button type="button" class="collapsible">
+
+        <div class="game-image"><img src="/assets/img/gallery/1.jpg"></div>
+
+        <div class="game-name">
+
+            <h1>Game 2</h1>
+
+            <div class="game-info">
+                <p>Genre:</p>
+                <p>Plattform:</p>
+            </div>
+
+            <div class="game-info2">
+                <p>Action, Adventure</p>
+                <p>Windows <i class="fa fa-windows"></i> , macOS <i class="fa fa-apple"></i></p>
+            </div>
+
+        </div>
+
+    </button>
     <div class="content">
         <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br> do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. <br>Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            dolore magna aliqua. <br>Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex
             ea commodo consequat.</p>
     </div>
 
-    <button type="button" class="collapsible"> Game 3</button>
+    <button type="button" class="collapsible">
+
+        <div class="game-image"><img src="/assets/img/gallery/1.jpg"></div>
+
+        <div class="game-name">
+
+            <h1>Game 3</h1>
+
+            <div class="game-info">
+                <p>Genre:</p>
+                <p>Plattform:</p>
+            </div>
+
+            <div class="game-info2">
+                <p>Action, Adventure</p>
+                <p>Windows <i class="fa fa-windows"></i> , macOS <i class="fa fa-apple"></i></p>
+            </div>
+
+        </div>
+
+    </button>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.<br> Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut labore
+            et
+            dolore magna aliqua.<br> Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex
             ea commodo consequat.</p>
     </div>
 
     <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
     </script>
 
 </body>

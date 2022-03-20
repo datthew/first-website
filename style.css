@@ -207,15 +207,15 @@
     .games-navbar {
       height: 100%;
       background-color: black;
-      border-top: 1px solid rgb(125, 125, 125); 
-      border-bottom: 1px solid rgb(125, 125, 125); 
+      border-top: 2px solid rgb(125, 125, 125); 
+      border-bottom: 2px solid rgb(125, 125, 125); 
     }
 
     .collapsible {
       background-color: rgb(20, 20, 20);
       color: white;
       cursor: pointer;
-      padding: 48px;
+      padding: 18px;
       width: 100%;
       border: none;
       text-align: left;
@@ -229,7 +229,6 @@
 
     .collapsible.active {
       background-color: rgb(20, 20, 20);
-      /* border-bottom: none; */
     } 
 
     .game-image img {
@@ -239,10 +238,24 @@
      
     }
 
-    .game-info {
-      background-color: green;
+    .game-name {
       margin-left: 220px;
       text-align: left;
+      padding-top: 40px;
+    }
+
+    .game-info {     
+      text-align: left;
+      padding: 10px 5px 10px 10px;
+      float: left;
+      color: rgb(100, 100, 100);
+    }
+
+    .game-info2 {    
+      text-align: left;
+      padding: 10px 10px 10px 5px;
+      float: left;
+      color: rgb(180, 180, 180);
     }
     
     .content {
@@ -252,6 +265,6 @@
       overflow: hidden;
       color: white;
       background-color: rgb(20, 20, 20);
-      border-bottom: 1px solid rgb(125, 125, 125);
+      border-bottom: 2px solid rgb(125, 125, 125);
     }
   
