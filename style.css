@@ -247,7 +247,8 @@
     .game-image img {
       width: 200px;
       height: 200px;
-      float: left;     
+      float: left;  
+      border: 1px solid rgb(125, 125, 125);
     }
 
     .game-name {
