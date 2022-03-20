@@ -215,7 +215,7 @@
       background-color: rgb(20, 20, 20);
       color: white;
       cursor: pointer;
-      padding: 18px;
+      padding: 20px 0 20px 50px;
       width: 100%;
       border: none;
       text-align: left;
@@ -231,35 +231,47 @@
       background-color: rgb(20, 20, 20);
     } 
 
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      padding-right: 25px;
+      font-size: 25px;
+    }
+    
+    .collapsible.active:after {
+      content: "\2212";
+    }
+
     .game-image img {
       width: 200px;
       height: 200px;
-      float: left;
-     
+      float: left;     
     }
 
     .game-name {
-      margin-left: 220px;
+      margin-left: 250px;
       text-align: left;
       padding-top: 40px;
     }
 
     .game-info {     
       text-align: left;
-      padding: 10px 5px 10px 10px;
+      padding: 10px 5px 10px;
       float: left;
       color: rgb(100, 100, 100);
     }
 
     .game-info2 {    
       text-align: left;
-      padding: 10px 10px 10px 5px;
+      padding: 10px;
       float: left;
       color: rgb(180, 180, 180);
     }
     
     .content {
-      padding: 0 18px;
+      padding: 0 25px;
       max-height: 0;
       transition: max-height 0.3s ease-out;
       overflow: hidden;
