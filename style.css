@@ -212,6 +212,11 @@
       border-bottom: 1px solid rgb(125, 125, 125); 
     }
 
+     .games-page {
+      margin: 0 200px 0 200px;
+      border: 1px solid rgb(125, 125, 125);
+    } 
+
     .collapsible {
       background-color: rgb(20, 20, 20);
       color: white;
@@ -227,10 +232,6 @@
     .collapsible:hover {
       background-color: rgb(35, 35, 35);
     }
-
-    /* .collapsible.active {
-      background-color: rgb(20, 20, 20);
-    }  */
 
     .collapsible:after {
       content: '\002B';
@@ -283,8 +284,8 @@
 
     .content-description {
       float: left;
-      padding: 10px 50px 50px 50px;
-      font-size: 24px;
+      padding: 10px 50px 0 50px;
+      font-size: 20px;
     }
 
     .content-description h4 {
@@ -296,7 +297,7 @@
     }
 
     .content-description button {
-      font-size: 25px;
+      font-size: 22px;
       background-color: rgb(236, 63, 66);
       color: white;
       cursor: pointer;
@@ -304,4 +305,17 @@
       border-radius: 5px;
       padding: 5px 30px;
     }
+
+    .content-images {
+      float: left;
+      padding: 0 0 40px 20px;
+    }
+
+    .content-images img {
+      height: 300px;
+      width: 500px;
+      margin: 10px;
+      /* border: 1px solid rgb(63, 140, 236); */
+    }
+
   
