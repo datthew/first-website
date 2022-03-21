@@ -118,12 +118,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    line-height: 43px; 
   }
 
   .art-navbar ul li {
     list-style: none;
     font-size: large;
-    line-height: 43px; 
+    
     color: white;
     padding: 0 20px;
     cursor: pointer;
@@ -207,8 +208,8 @@
     .games-navbar {
       height: 100%;
       background-color: black;
-      border-top: 2px solid rgb(125, 125, 125); 
-      border-bottom: 2px solid rgb(125, 125, 125); 
+      border-top: 1px solid rgb(125, 125, 125); 
+      border-bottom: 1px solid rgb(125, 125, 125); 
     }
 
     .collapsible {
@@ -220,16 +221,16 @@
       border: none;
       text-align: left;
       outline: none;
-      font-size: 15px;
+      font-size: 18px;
     }
     
     .collapsible:hover {
-      background-color: rgb(50, 50, 50);
+      background-color: rgb(35, 35, 35);
     }
 
-    .collapsible.active {
+    /* .collapsible.active {
       background-color: rgb(20, 20, 20);
-    } 
+    }  */
 
     .collapsible:after {
       content: '\002B';
@@ -245,82 +246,62 @@
     }
 
     .game-image img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       float: left;  
       border: 1px solid rgb(125, 125, 125);
     }
 
     .game-name {
-      margin-left: 250px;
-      text-align: left;
       padding-top: 40px;
+      margin-left: 250px;
+      text-align: left;      
     }
 
     .game-info {     
       text-align: left;
       padding: 10px 5px 10px;
       float: left;
-      color: rgb(100, 100, 100);
+      color: rgb(236, 63, 66);
     }
 
     .game-info2 {    
       text-align: left;
       padding: 10px;
       float: left;
-      color: rgb(180, 180, 180);
+      color: rgb(63, 140, 236);
     }
     
     .content {
-      
       max-height: 0;
       transition: max-height 0.3s ease-out;
       overflow: hidden;
       color: white;
-      /* background-color: rgb(20, 20, 20); */
-      background-color: rgb(197, 197, 197);
-      border-bottom: 2px solid rgb(125, 125, 125);
+      background-color: rgb(20, 20, 20);      
+      border-bottom: 1px solid rgb(125, 125, 125);
     }
 
     .content-description {
       float: left;
-      background-color: green;
-      padding: 20px 10px 20px 50px;
+      padding: 10px 50px 50px 50px;
       font-size: 24px;
     }
 
-    .content-info {
+    .content-description h4 {
       padding-top: 40px;     
     }
 
-    .content-info p {
-      padding: 2px;     
+    .content-description p {
+      padding-top: 20px;     
     }
 
-    .download-button {     
-      float: left;
-      padding-right: 10px;
-    }
-
-    .download-button button {
-      font-size: 18px;
-      background-color: DodgerBlue;
+    .content-description button {
+      font-size: 25px;
+      background-color: rgb(236, 63, 66);
+      color: white;
       cursor: pointer;
       border: none;
       border-radius: 5px;
-      padding: 5px;
-    }
-
-    .download-info {    
-      text-align: left;
-      float: left;
-      color: white;
-    }
-
-    .download-info2 {    
-      text-align: left;
-      float: left;
-      padding-left: 10px;
-      color: rgb(168, 168, 168);
+      padding: 5px 30px;
     }
   
