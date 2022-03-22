@@ -76,7 +76,7 @@
 
     <div class="gallery">
 
-        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg" alt="1"></div>
         <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
         <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
         <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
@@ -88,6 +88,20 @@
         <div class="image" data-item="animation"><img src="/assets/img/gallery/3.jpg"></div>
 
     </div>
+
+    <div class="preview-box">
+
+        <div class="image-box">
+            <img src="/assets/img/gallery/1.jpg" alt="1">
+        </div>
+
+        <div class="details">
+            <span class="title">Image Category: <p>Not defined</p></span>
+        </div>
+
+    </div>
+
+    <div class="shadow"></div>
 
     <script>
 
@@ -115,6 +129,10 @@
             })
         }
 
+
+        const previewBox = document.querySelector(".preview-box"),
+        previewImg = previewBox.querySelector("img")
+        
     </script>
 
 </body>

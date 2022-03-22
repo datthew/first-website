@@ -150,18 +150,20 @@
 
   .gallery {
     display: flex;
-    justify-content: left;
-    align-items: center;
+    /* justify-content: left;
+    align-items: center; */
     flex-wrap: wrap;
-  }
+  } 
 
   .gallery .image {
-    position: relative;
+    /* position: relative;
     width: 379px;
     height: 379px;
-    display: block;
+    display: block; */
+    cursor: pointer; 
+    width: calc(100% / 4);
+    max-height: 380px;
     overflow: hidden;
-    cursor: pointer;
   }
 
   .gallery .image.hide {
@@ -169,10 +171,12 @@
   }
 
   .gallery .image img {
-    position: absolute;
-    width: 100%;
+    /* position: absolute;
     height: 100%;
     object-fit: cover;
+    transition: .2s linear; */
+    width: 100%;
+    vertical-align: middle;
     transition: .2s linear;
   }
 
@@ -180,6 +184,74 @@
     transform: scale(1.1);
   }
 
+  .preview-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); 
+    max-width: 700px;
+    width: 100%;
+    z-index: 100;
+    padding: 5px;
+    background-color: green;
+    
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .preview-box .image-box {
+    display: flex;
+    width: 100%;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
+  .preview-box .details {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .preview-box .details .title {
+    display: flex;
+    font-size: 18px;
+  }
+
+  .details .title p {
+    margin-left: 5px;
+  }
+
+  .shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99;
+
+    display: none;
+  }
+
+
+  @media(max-width: 1000px){
+    .gallery .image {
+      cursor: pointer; 
+      width: calc(100% / 3);
+      overflow: hidden;
+    }
+  }
+
+  @media(max-width: 800px){
+    .gallery .image {
+      cursor: pointer; 
+      width: calc(100% / 2);
+      overflow: hidden;
+    }
+  }
     /*-------------------- GAMES PAGE ---------------------*/
 
     .games-box {
