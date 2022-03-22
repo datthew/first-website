@@ -76,16 +76,16 @@
 
     <div class="gallery">
 
-        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg" alt="1"></div>
-        <div class="image" data-item="digital"><img src="/assets/img/gallery/1.jpg"></div>
-        <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
-        <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
-        <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
-        <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
-        <div class="image" data-item="ddd"><img src="/assets/img/gallery/2.jpg"></div>
-        <div class="image" data-item="animation"><img src="/assets/img/gallery/3.jpg"></div>
-        <div class="image" data-item="animation"><img src="/assets/img/gallery/3.jpg"></div>
-        <div class="image" data-item="animation"><img src="/assets/img/gallery/3.jpg"></div>
+        <div class="image" data-item="digital" alt="Image name"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="digital" alt="123test"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="ddd" alt="its working"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="finally"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wow"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wowza"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wowoweewaa"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg" ></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg"></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg"></div>
 
     </div>
 
@@ -96,7 +96,7 @@
         </div>
 
         <div class="details">
-            <span class="title">Image Category: <p>Not defined</p></span>
+            <span class="title"><p>Not defined</p></span>
         </div>
 
     </div>
@@ -141,9 +141,10 @@
         function preview(element) {
             // document.querySelector("body").style.overflow = "hidden";
             let selectedPrevImg = element.querySelector("img").src;
-            previewImg.src = selectedPrevImg;
-            let selectedImgCategory = element.getAttribute("data-item");
-            categoryName.textContent = selectedImgCategory;        
+            previewImg.src = selectedPrevImg;            
+            let selectedImgCategory = element.getAttribute("alt");
+            categoryName.textContent = selectedImgCategory; 
+
             previewBox.classList.add("show");
             shadow.classList.add("show");
 
