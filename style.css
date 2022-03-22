@@ -160,6 +160,8 @@
     width: 379px;
     height: 379px;
     display: block;
+    overflow: hidden;
+    cursor: pointer;
   }
 
   .gallery .image.hide {
@@ -169,14 +171,13 @@
   .gallery .image img {
     position: absolute;
     width: 100%;
-    height: auto;
-    /* top: 0;
-    left: 0; */
+    height: 100%;
     object-fit: cover;
+    transition: .2s linear;
   }
 
   .image img:hover {
-    opacity: 0.7; 
+    transform: scale(1.1);
   }
 
     /*-------------------- GAMES PAGE ---------------------*/
