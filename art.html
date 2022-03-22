@@ -92,7 +92,7 @@
     <div class="preview-box">
 
         <div class="image-box">
-            <img src="/assets/img/gallery/1.jpg" alt="1">
+            <img src="" alt="">
         </div>
 
         <div class="details">
@@ -129,10 +129,30 @@
             })
         }
 
+        for (let index = 0; index < image.length; index++) {
+            image[index].setAttribute("onclick", "preview(this)");
+        }
 
         const previewBox = document.querySelector(".preview-box"),
-        previewImg = previewBox.querySelector("img")
-        
+            previewImg = previewBox.querySelector("img")
+            categoryName = previewBox.querySelector(".title p")
+            shadow = document.querySelector(".shadow")
+
+        function preview(element) {
+            // document.querySelector("body").style.overflow = "hidden";
+            let selectedPrevImg = element.querySelector("img").src;
+            previewImg.src = selectedPrevImg;
+            let selectedImgCategory = element.getAttribute("data-item");
+            categoryName.textContent = selectedImgCategory;        
+            previewBox.classList.add("show");
+            shadow.classList.add("show");
+
+            shadow.onclick = ()=>{
+                previewBox.classList.remove("show");
+                shadow.classList.remove("show");
+                // document.querySelector("body").style.overflow = "auto";
+            }
+        }
     </script>
 
 </body>
