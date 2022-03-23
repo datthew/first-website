@@ -394,30 +394,44 @@
 
 /*-------------------- CONTACT PAGE ---------------------*/
 
-.contact-box {
-  text-align: center;
+.contact-box {  
   padding: 30px;
-  background-color: green;
+  text-align: center;
   color: white;
+  font-size: 40px;
+  background-color: rgb(20, 20, 20);
+}
+
+.contact-text {
+  padding-top: 40px;
 }
 
 .contact-info {
   margin: 100px;
-  background-color: blue;
+  display: inline-flex;
+  font-size: 22px;
+  background-color: black;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  color:rgb(236, 63, 66);
 }
 
-.contact-box .fa {
+.contact-info .fa {
   padding: 10px;
   font-size: 50px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: white;
+  color: rgb(63, 140, 236);
 }
 
-.contact-box .fa:hover {
+.contact-info .fa:hover {
   opacity: 0.7;
+}
+
+.contact-info p {
+  padding: 40px;
 }
 
 /* .fa-instagram {
