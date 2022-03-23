@@ -3,392 +3,430 @@
   padding: 0;
 }
   
-  .main {
-    text-align: center;
-    background-color: rgb(20, 20, 20);
-  }
+.main {
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+}
 
-  .article {    
-    font-size: 40px;
-    color: white;
-    padding: 5%;
+.article {    
+  font-size: 40px;
+  color: white;
+  padding: 5%;
 
-  }
+}
 
-  .section1 {
-    text-align: center;
-    font-size: 24px;
-    color: white;
+.section1 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
 
-    display: inline-flexbox;
-    margin-top: 12%;
-    margin-bottom: 12%;
-  }
+  display: inline-flexbox;
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
 
-  .section2 {
-    color: white;
-    display: inline-flexbox;   
-  }
+.section2 {
+  color: white;
+  display: inline-flexbox;   
+}
 
-  .section2 a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+.section2 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
     
-    padding: 20px; 
-    border-radius: 6px;
-    background-color: rgb(63, 140, 236);
-    border: 3px outset rgb(63, 98, 236);
-  }
+  padding: 20px; 
+  border-radius: 6px;
+  background-color: rgb(63, 140, 236);
+  border: 3px outset rgb(63, 98, 236);
+}
 
-  .section2 a:hover {     
-    filter: brightness(120%);
-  }
+.section2 a:hover {     
+  filter: brightness(120%);
+}
 
-  .section2 a:hover > i { 
-    color: rgb(236, 63, 66);
-  }
+.section2 a:hover > i { 
+  color: rgb(236, 63, 66);
+}
 
-  .spotify {
-    padding-top: 200px;
-  }
+.spotify {
+  padding-top: 200px;
+}
 
-  /*-------------------- ART PAGE ---------------------*/
+/*-------------------- ART PAGE ---------------------*/
 
-  .art-box {
-    height: 210px;
-    width: 100%;
-  }
+.art-box {
+  height: 210px;
+  width: 100%;
+}
 
-  .art-banner {
-    background-image: url(assets/img/nocolor.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    position: relative;
-  }
+.art-banner {
+  background-image: url(assets/img/nocolor.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
 
-   .art-banner2 {
-    opacity: 0;
-    transition: 1.5s ease;
+.art-banner2 {
+  opacity: 0;
+  transition: 1.5s ease;
 
-    background-image: url(assets/img/color.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    position: absolute;
-  } 
+  background-image: url(assets/img/color.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+} 
 
-  .art-banner2:hover {
-    opacity: 1;
-  }  
+.art-banner2:hover {
+  opacity: 1;
+}  
 
-  .banner-name {
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    padding-top: 1%;
-  }
+.banner-name {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 1%;
+}
 
-  .art-header {
-    width: 100%;
-    height: 45px;
+.art-header {
+  width: 100%;
+  height: 45px;
 
-    position: sticky;
-    top: 80px;
-    z-index: 2;
-  }
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
 
-  .art-navbar {
-    height: 100%;
-    background-color: rgb(20, 20, 20);
-    border-top: 1px solid rgb(125, 125, 125); 
-    border-bottom: 1px solid rgb(125, 125, 125); 
-  }
+.art-navbar {
+  height: 100%;
+  background-color: rgb(20, 20, 20);
+  border-top: 1px solid rgb(125, 125, 125); 
+  border-bottom: 1px solid rgb(125, 125, 125); 
+}
 
-  .art-navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    line-height: 43px; 
-  }
+.art-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 43px; 
+}
 
-  .art-navbar ul li {
-    list-style: none;
-    font-size: large;
-    
-    color: white;
-    padding: 0 20px;
-    cursor: pointer;
-  }
+.art-navbar ul li {
+  list-style: none;
+  font-size: large;
+  
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+}
 
-  .art-navbar li:hover { 
-    background-color: rgb(50, 50, 50);
-    color:rgb(63, 140, 236);
-  }
+.art-navbar li:hover { 
+  background-color: rgb(50, 50, 50);
+  color:rgb(63, 140, 236);
+}
 
-  .art-navbar li:hover > i { 
-    color: rgb(236, 63, 66);
-  }
+.art-navbar li:hover > i { 
+  color: rgb(236, 63, 66);
+}
 
-  .art-navbar ul li.active {
-    color: rgb(236, 63, 66);
-    border-bottom: 4px solid rgb(63, 140, 236);
-  } 
+.art-navbar ul li.active {
+  color: rgb(236, 63, 66);
+  border-bottom: 4px solid rgb(63, 140, 236);
+} 
 
-  .art-navbar li.active > i {
-    color: rgb(63, 140, 236);
-  }
+.art-navbar li.active > i {
+  color: rgb(63, 140, 236);
+}
 
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-  } 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+} 
 
+.gallery .image {
+  cursor: pointer; 
+  width: calc(100% / 4);
+  max-height: 380px;
+  overflow: hidden;
+}
+
+.gallery .image.hide {
+  display: none;
+}
+
+.gallery .image img {
+  width: 100%;
+  vertical-align: middle;
+  transition: .2s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.preview-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); 
+  max-width: 700px;
+  width: 100%;
+  z-index: 100;
+  padding: 5px;
+  background-color: white;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all .2s ease;
+}
+
+.preview-box .image-box {
+  display: flex;
+  width: 100%;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+.preview-box .details {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+/* .preview-box .details .title {
+  display: flex;
+  font-size: 18px;
+} */
+
+.details .title p {
+  /* margin-left: 5px; */
+  font-size: 24px;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 99;
+
+  display: none;
+}
+
+.shadow.show {
+  display: block;
+}
+
+
+@media(max-width: 1000px){
   .gallery .image {
     cursor: pointer; 
-    width: calc(100% / 4);
-    max-height: 380px;
+    width: calc(100% / 3);
     overflow: hidden;
   }
+}
 
-  .gallery .image.hide {
-    display: none;
+@media(max-width: 800px){
+  .gallery .image {
+    cursor: pointer; 
+    width: calc(100% / 2);
+    overflow: hidden;
   }
-
-  .gallery .image img {
-    width: 100%;
-    vertical-align: middle;
-    transition: .2s ease;
-  }
-
-  .image img:hover {
-    transform: scale(1.1);
-  }
-
-  .preview-box {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9); 
-    max-width: 700px;
-    width: 100%;
-    z-index: 100;
-    padding: 5px;
-    background-color: white;
-
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .preview-box.show {
-    opacity: 1;
-    pointer-events: auto;
-    transition: all .2s ease;
-  }
-
-  .preview-box .image-box {
-    display: flex;
-    width: 100%;
-  }
-
-  .image-box img {
-    width: 100%;
-  }
-
-  .preview-box .details {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-  }
-
-  /* .preview-box .details .title {
-    display: flex;
-    font-size: 18px;
-  } */
-
-  .details .title p {
-    /* margin-left: 5px; */
-    font-size: 24px;
-  }
-
-  .shadow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 99;
-
-    display: none;
-  }
-
-  .shadow.show {
-    display: block;
-  }
-
-
-  @media(max-width: 1000px){
-    .gallery .image {
-      cursor: pointer; 
-      width: calc(100% / 3);
-      overflow: hidden;
-    }
-  }
-
-  @media(max-width: 800px){
-    .gallery .image {
-      cursor: pointer; 
-      width: calc(100% / 2);
-      overflow: hidden;
-    }
-  }
-    /*-------------------- GAMES PAGE ---------------------*/
-
-    .games-box {
-      height: 210px;
-      width: 100%;
-    }
-  
-    .games-banner {
-      background-image: url(assets/img/nocolor.png);
-      background-size: cover;
-      background-position: center;
-      height: 100%;
-      width: 100%;
-      background-attachment: fixed;
-      position: relative;
-    }
-  
-    .games-header {
-      width: 100%;
-      height: 45px;
-  
-      position: sticky;
-      top: 80px;
-      z-index: 2;
-    }
-  
-    .games-navbar {
-      height: 100%;
-      background-color: black;
-      border-top: 1px solid rgb(125, 125, 125); 
-      border-bottom: 1px solid rgb(125, 125, 125); 
-    }
-
-     .games-page {
-      margin: 0 200px 0 200px;
-      border: 1px solid rgb(125, 125, 125);
-    } 
-
-    .collapsible {
-      background-color: rgb(20, 20, 20);
-      color: white;
-      cursor: pointer;
-      padding: 20px 0 20px 50px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 18px;
-    }
+}
     
-    .collapsible:hover {
-      background-color: rgb(35, 35, 35);
-    }
+/*-------------------- GAMES PAGE ---------------------*/
 
-    .collapsible:after {
-      content: '\002B';
-      color: white;
-      font-weight: bold;
-      float: right;
-      padding-right: 25px;
-      font-size: 25px;
-    }
+.games-box {
+  height: 210px;
+  width: 100%;
+}
+
+.games-banner {
+  background-image: url(assets/img/nocolor.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.games-header {
+  width: 100%;
+  height: 45px;
+
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
+
+.games-navbar {
+  height: 100%;
+  background-color: black;
+  border-top: 1px solid rgb(125, 125, 125); 
+  border-bottom: 1px solid rgb(125, 125, 125); 
+}
+
+ .games-page {
+  margin: 0 200px 0 200px;
+  border: 1px solid rgb(125, 125, 125);
+} 
+
+.collapsible {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  cursor: pointer;
+  padding: 20px 0 20px 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.collapsible:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  padding-right: 25px;
+  font-size: 25px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.game-image img {
+  width: 180px;
+  height: 180px;
+  float: left;  
+  border: 1px solid rgb(125, 125, 125);
+}
+
+.game-name {
+  padding-top: 40px;
+  margin-left: 250px;
+  text-align: left;      
+}
+
+.game-info {     
+  text-align: left;
+  padding: 10px 5px 10px;
+  float: left;
+  color: rgb(236, 63, 66);
+}
+
+.game-info2 {    
+  text-align: left;
+  padding: 10px;
+  float: left;
+  color: rgb(63, 140, 236);
+}
     
-    .collapsible.active:after {
-      content: "\2212";
-    }
+.content {
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(20, 20, 20);      
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
 
-    .game-image img {
-      width: 180px;
-      height: 180px;
-      float: left;  
-      border: 1px solid rgb(125, 125, 125);
-    }
+.content-description {
+  float: left;
+  padding: 10px 50px 20px 50px;
+  font-size: 20px;
+}
 
-    .game-name {
-      padding-top: 40px;
-      margin-left: 250px;
-      text-align: left;      
-    }
+.content-description h4 {
+  padding-top: 40px;     
+}
 
-    .game-info {     
-      text-align: left;
-      padding: 10px 5px 10px;
-      float: left;
-      color: rgb(236, 63, 66);
-    }
+.content-description p {
+  padding-top: 20px;     
+}
 
-    .game-info2 {    
-      text-align: left;
-      padding: 10px;
-      float: left;
-      color: rgb(63, 140, 236);
-    }
-    
-    .content {
-      max-height: 0;
-      transition: max-height 0.3s ease-out;
-      overflow: hidden;
-      color: white;
-      background-color: rgb(20, 20, 20);      
-      border-bottom: 1px solid rgb(125, 125, 125);
-    }
+.content-description button {
+  font-size: 22px;
+  background-color: rgb(236, 63, 66);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
 
-    .content-description {
-      float: left;
-      padding: 10px 50px 20px 50px;
-      font-size: 20px;
-    }
+.content-images {
+  float: left;
+  padding: 20px 0 20px 20px;
+}
 
-    .content-description h4 {
-      padding-top: 40px;     
-    }
+.content-images img {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  /* border: 1px solid rgb(63, 140, 236); */
+}
 
-    .content-description p {
-      padding-top: 20px;     
-    }
+/*-------------------- CONTACT PAGE ---------------------*/
 
-    .content-description button {
-      font-size: 22px;
-      background-color: rgb(236, 63, 66);
-      color: white;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 30px;
-    }
+.contact-box {
+  text-align: center;
+  padding: 30px;
+  background-color: green;
+  color: white;
+}
 
-    .content-images {
-      float: left;
-      padding: 20px 0 20px 20px;
-    }
+.contact-info {
+  margin: 100px;
+  background-color: blue;
+}
 
-    .content-images img {
-      height: 300px;
-      width: 500px;
-      margin: 10px;
-      /* border: 1px solid rgb(63, 140, 236); */
-    }
+.contact-box .fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
 
+.contact-box .fa:hover {
+  opacity: 0.7;
+}
+
+/* .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github-square {
+  background: #125688;
+  color: white;
+} */
   
