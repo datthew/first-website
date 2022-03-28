@@ -61,6 +61,16 @@
   .spotify iframe {
     width: 80%;
   }
+
+  .section2 a {
+
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100px;
+    padding: 10px;
+     
+  }
 }
 
 /*-------------------- ART PAGE ---------------------*/
@@ -443,6 +453,10 @@
     margin-left: 180px;    
   }
 
+  .content-images {
+    padding: 20px 0 20px 20px;
+  }
+
   .content-images img {
     height: 200px;
     width: 333px;
@@ -492,16 +506,6 @@
   padding: 40px;
 }
 
-/* .fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-github-square {
-  background: #125688;
-  color: white;
-} */
-
 @media(max-width: 1000px){
 
   .contact-box {    
@@ -509,8 +513,15 @@
   }
 
   .contact-info {
-    display: block;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px; 
     font-size: 18px;
+  }
+
+  .contact-info p {
+    padding: 0;
   }
 
 }
