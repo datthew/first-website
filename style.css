@@ -53,8 +53,13 @@
 }
 
 @media(max-width: 1000px){
+
   .article {    
     font-size: 30px;
+  }
+
+  .spotify iframe {
+    width: 80%;
   }
 }
 
