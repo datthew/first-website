@@ -63,13 +63,11 @@
   }
 
   .section2 a {
-
     display: block; 
     margin-left: auto;
     margin-right: auto; 
     width: 100px;
-    padding: 10px;
-     
+    padding: 10px;     
   }
 }
 
@@ -450,17 +448,17 @@
   }
   .game-name {
     padding-top: 10px;
-    margin-left: 180px;    
+    margin-left: 150px;    
   }
 
   .content-images {
     padding: 20px 0 20px 20px;
   }
 
-  .content-images img {
+  .content-images img { 
     height: 200px;
     width: 333px;
-    margin: 10px;
+    margin: 10px auto 10px auto;
   }
 }
 
