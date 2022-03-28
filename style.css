@@ -52,6 +52,12 @@
   padding-top: 200px;
 }
 
+@media(max-width: 1000px){
+  .article {    
+    font-size: 30px;
+  }
+}
+
 /*-------------------- ART PAGE ---------------------*/
 
 .art-box {
@@ -239,9 +245,7 @@
 @media(max-width: 1000px){
 
   .gallery .image {
-    cursor: pointer; 
-    width: calc(100% / 3);
-    overflow: hidden;
+    width: calc(100% / 2);
   }
 
   .art-navbar li {
@@ -266,14 +270,6 @@
     padding-top: 40px;
   }
 }
-
-/* @media(max-width: 800px){
-  .gallery .image {
-    cursor: pointer; 
-    width: calc(100% / 2);
-    overflow: hidden;
-  } 
-}*/
     
 /*-------------------- GAMES PAGE ---------------------*/
 
@@ -500,4 +496,17 @@
   background: #125688;
   color: white;
 } */
+
+@media(max-width: 1000px){
+
+  .contact-box {    
+    font-size: 30px;
+  }
+
+  .contact-info {
+    display: block;
+    font-size: 18px;
+  }
+
+}
   
