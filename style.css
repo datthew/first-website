@@ -93,7 +93,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  padding-top: 1%;
+  padding-top: 20px;
 }
 
 .art-header {
@@ -260,6 +260,11 @@
     border-top: 2px solid rgb(63, 140, 236);
     border-bottom: 2px solid rgb(236, 63, 66);
   } 
+
+  .banner-name {
+    font-size: 60px;    
+    padding-top: 40px;
+  }
 }
 
 /* @media(max-width: 800px){
@@ -419,6 +424,29 @@
     margin: 0;
   } 
 
+  .collapsible {
+    padding: 20px 0 10px 20px;
+    font-size: 14px;
+  }
+  
+  .collapsible.active:after {
+    content: "\2212";
+  }
+  
+  .game-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .game-name {
+    padding-top: 10px;
+    margin-left: 180px;    
+  }
+
+  .content-images img {
+    height: 200px;
+    width: 333px;
+    margin: 10px;
+  }
 }
 
 /*-------------------- CONTACT PAGE ---------------------*/
