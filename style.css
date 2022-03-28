@@ -440,9 +440,9 @@
     padding: 20px 0 10px 20px;
     font-size: 14px;
   }
-  
-  .collapsible.active:after {
-    content: "\2212";
+
+  .collapsible:after {
+    padding-right: 5px;
   }
   
   .game-image img {
@@ -463,6 +463,7 @@
     width: 333px;
     margin: 10px auto 10px auto;
   }
+
 }
 
 /*-------------------- CONTACT PAGE ---------------------*/
