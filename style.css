@@ -172,14 +172,18 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 } 
 
 .gallery .image {
   cursor: pointer; 
-  width: calc(100% / 4);
-  max-height: 380px;
+  width: calc(100% / 5);
+  max-height: calc(100% / 5);
   overflow: hidden;
+
+  transform: scale(.96);
 }
+
 
 .gallery .image.hide {
   display: none;
@@ -199,9 +203,9 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.9); 
+  transform: translate(-50%, -50%) scale(.9); 
   max-width: 700px;
-  width: 100%;
+  
   z-index: 100;
   padding: 5px;
   background-color: white;
