@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    
     <div class="banner-box">
 
         <div class="banner">
@@ -140,23 +140,27 @@
             previewImg = previewBox.querySelector("img")
             categoryName = previewBox.querySelector(".title p")
             shadow = document.querySelector(".shadow")
-
+        
         function preview(element) {
-            // document.querySelector("body").style.overflow = "hidden";
             let selectedPrevImg = element.querySelector("img").src;
-            previewImg.src = selectedPrevImg;            
             let selectedImgCategory = element.getAttribute("alt");
-            categoryName.textContent = selectedImgCategory; 
+
+            previewImg.classList.remove("show");
+
+            previewImg.src = selectedPrevImg;
+            previewImg.classList.add("show");  
+
+            categoryName.textContent = selectedImgCategory;
 
             previewBox.classList.add("show");
             shadow.classList.add("show");
 
-            shadow.onclick = ()=>{
+            shadow.onclick = () => {
                 previewBox.classList.remove("show");
                 shadow.classList.remove("show");
-                // document.querySelector("body").style.overflow = "auto";
-            }
-        }
+                previewImg.src = "";
+    };
+}
     </script>
 
 </body>

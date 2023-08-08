@@ -3,6 +3,29 @@
   padding: 0;
 }
   
+body {
+  overflow: scroll; /* Scrollbar ohne Verschiebung */
+  overflow-x: hidden;
+}
+
+/* Styling für die Scrollbar */
+body::-webkit-scrollbar {
+  width: 10px; /* Breite der Scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #555; /* Farbe des Scrollbar-Griffs */
+  border-radius: 10px; /* Abrundung des Scrollbar-Griffs */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Farbe des Scrollbar-Griffs beim Hover */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #303030; /* Farbe des Scrollbar-Hintergrunds */
+}
+
 .main {
   text-align: center;
   background-color: rgb(20, 20, 20);
@@ -177,8 +200,10 @@
 
 .gallery .image {
   cursor: pointer; 
-  width: calc(100% / 5);
-  max-height: calc(100% / 5);
+  width: 12.5%;
+  padding-bottom: 12.5%;
+  position: relative;
+
   overflow: hidden;
 
   transform: scale(.96);
@@ -191,7 +216,9 @@
 
 .gallery .image img {
   width: 100%;
-  vertical-align: middle;
+  height: auto;
+  position: absolute;
+ 
   transition: .2s ease;
 }
 
@@ -204,7 +231,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(.9); 
-  max-width: 700px;
+  max-width: 1200px;
+  
   
   z-index: 100;
   padding: 5px;
@@ -261,11 +289,44 @@
   display: block;
 }
 
+@media(max-width: 2000px){
+
+  .gallery .image {
+    width: 20%;
+    padding-bottom: 20%;
+  }
+
+  .preview-box {
+    max-width: 40%;
+  }
+
+  .art-navbar li {
+    float: none;
+    display: block;
+    line-height: 30px;
+
+  }
+
+  .art-navbar a.active {
+    border-top: 2px solid rgb(63, 140, 236);
+    border-bottom: 2px solid rgb(236, 63, 66);
+  } 
+
+  .banner-name {
+    font-size: 60px;    
+    padding-top: 40px;
+  }
+}
 
 @media(max-width: 1000px){
 
   .gallery .image {
-    width: calc(100% / 2);
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  .preview-box {
+    max-width: 700px;
   }
 
   .art-navbar li {
