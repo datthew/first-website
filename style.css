@@ -15,15 +15,19 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: #555; /* Farbe des Scrollbar-Griffs */
-  border-radius: 10px; /* Abrundung des Scrollbar-Griffs */
+  border-radius: 12px; /* Abrundung des Scrollbar-Griffs */
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #888; /* Farbe des Scrollbar-Griffs beim Hover */
+  background-color: rgb(236, 63, 66); /* Farbe des Scrollbar-Griffs beim Hover */
 }
 
 body::-webkit-scrollbar-track {
   background-color: #303030; /* Farbe des Scrollbar-Hintergrunds */
+}
+
+body::-webkit-scrollbar-track:hover {
+  background-color: rgb(63, 98, 236); /* Farbe des Scrollbar-Hintergrunds */
 }
 
 .main {
@@ -199,6 +203,7 @@ body::-webkit-scrollbar-track {
 } 
 
 .gallery .image {
+  background-color: black;
   cursor: pointer; 
   width: 12.5%;
   padding-bottom: 12.5%;
@@ -206,7 +211,7 @@ body::-webkit-scrollbar-track {
 
   overflow: hidden;
 
-  transform: scale(.96);
+  transform: scale(0.95);
 }
 
 
@@ -218,28 +223,40 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: auto;
   position: absolute;
- 
+
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
   transition: .2s ease;
 }
 
 .image img:hover {
-  transform: scale(1.1);
+
+  transform: translate(-50%, -50%)  scale(1.2);
 }
 
 .preview-box {
   position: fixed;
+  border-radius: 4px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(.9); 
-  max-width: 1200px;
+  transform: translate(-50%, -50%); 
+  max-width: 95vw;
+  max-height: 95vh;
   
   
   z-index: 100;
-  padding: 5px;
-  background-color: white;
-
+  padding: 8px;
+  background-color: rgb(82, 82, 82);
   opacity: 0;
   pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; /*  Zentriert den Inhalt vertikal */
 }
 
 .preview-box.show {
@@ -249,16 +266,26 @@ body::-webkit-scrollbar-track {
 }
 
 .preview-box .image-box {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-box img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  max-height: 90vh; /* Ändert die maximale Höhe für längere Bilder */
+  max-width: 90vw;
 }
 
 .preview-box .details {
-  display: flex;
+ 
   padding: 10px;
   align-items: center;
 }
@@ -271,6 +298,7 @@ body::-webkit-scrollbar-track {
 .details .title p {
   /* margin-left: 5px; */
   font-size: 24px;
+  color: white;
 }
 
 .shadow {
@@ -289,6 +317,7 @@ body::-webkit-scrollbar-track {
   display: block;
 }
 
+
 @media(max-width: 2000px){
 
   .gallery .image {
@@ -296,26 +325,12 @@ body::-webkit-scrollbar-track {
     padding-bottom: 20%;
   }
 
-  .preview-box {
-    max-width: 40%;
-  }
-
-  .art-navbar li {
-    float: none;
-    display: block;
-    line-height: 30px;
-
-  }
-
   .art-navbar a.active {
     border-top: 2px solid rgb(63, 140, 236);
     border-bottom: 2px solid rgb(236, 63, 66);
   } 
 
-  .banner-name {
-    font-size: 60px;    
-    padding-top: 40px;
-  }
+
 }
 
 @media(max-width: 1000px){
