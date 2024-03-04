@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datthew</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="banner-box">
+
+        <div class="banner">
+
+            <div class="banner2"></div>
+
+        </div>
+
+    </div>
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <ul>
+                <a href="index.html"><i class="fa fa-home" style="font-size:22px;"></i> Home</a>
+                <a class="active" href="art.html"><i class="fa fa-paint-brush" style="font-size:18px;"></i> Art</a>
+                <a href="games.html"><i class="fa fa-gamepad" style="font-size:22px;"></i> Games</a>
+                <a href="contact.html"><i class="fa fa-paper-plane" style="font-size:18px;"></i> Contact</a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="art-box">
+
+        <div class="art-banner">
+
+            <article class="banner-name">
+                <h1>ART</h1>
+            </article>
+
+            <div class="art-banner2">
+
+                <article class="banner-name">
+                    <h1>ART</h1>
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="art-header">
+
+        <div class="art-navbar">
+
+            <ul>
+
+                <li class="list active" data-filter="all"><i class="fa fa-globe"></i> ALL</li>
+                <li class="list" data-filter="digital"><i class="fa fa-file-image-o"></i> DIGITAL ART</li>
+                <li class="list" data-filter="ddd"><i class="fa fa-cubes"></i> 3D</li>
+                <li class="list" data-filter="animation"><i class="fa fa-play-circle-o"></i> ANIMATION</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="gallery">
+
+        <div class="image" data-item="digital" alt="Image name"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="digital" alt="123test"><img src="/assets/img/gallery/1.jpg"></div>
+        <div class="image" data-item="ddd" alt="its working"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="finally"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wow"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wowza"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="ddd" alt="wowoweewaa"><img src="/assets/img/gallery/2.jpg"></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg" ></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg"></div>
+        <div class="image" data-item="animation" alt="change name"><img src="/assets/img/gallery/3.jpg"></div>
+
+    </div>
+
+    <div class="preview-box">
+
+        <div class="image-box">
+            <img src="" alt="">
+        </div>
+
+        <div class="details">
+            <span class="title"><p>Not defined</p></span>
+        </div>
+
+    </div>
+
+    <div class="shadow"></div>
+
+    <script>
+
+        let list = document.querySelectorAll('.list');
+        let image = document.querySelectorAll('.image');
+
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) {
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for (let k = 0; k < image.length; k++) {
+                    image[k].classList.remove('active');
+                    image[k].classList.add('hide');
+
+                    if (image[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+                        image[k].classList.remove('hide');
+                        image[k].classList.add('active');
+                    }
+                }
+            })
+        }
+
+        for (let index = 0; index < image.length; index++) {
+            image[index].setAttribute("onclick", "preview(this)");
+        }
+
+        const previewBox = document.querySelector(".preview-box"),
+            previewImg = previewBox.querySelector("img")
+            categoryName = previewBox.querySelector(".title p")
+            shadow = document.querySelector(".shadow")
+
+        function preview(element) {
+            // document.querySelector("body").style.overflow = "hidden";
+            let selectedPrevImg = element.querySelector("img").src;
+            previewImg.src = selectedPrevImg;            
+            let selectedImgCategory = element.getAttribute("alt");
+            categoryName.textContent = selectedImgCategory; 
+
+            previewBox.classList.add("show");
+            shadow.classList.add("show");
+
+            shadow.onclick = ()=>{
+                previewBox.classList.remove("show");
+                shadow.classList.remove("show");
+                // document.querySelector("body").style.overflow = "auto";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

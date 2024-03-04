@@ -1,0 +1,531 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+.main {
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+}
+
+.article {    
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 50px;
+}
+
+.section1 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+
+  display: inline-flexbox;
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
+
+.section2 {
+  color: white;
+  display: inline-flexbox;   
+}
+
+.section2 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+    
+  padding: 20px; 
+  border-radius: 6px;
+  background-color: rgb(63, 140, 236);
+  border: 3px outset rgb(63, 98, 236);
+}
+
+.section2 a:hover {     
+  filter: brightness(120%);
+}
+
+.section2 a:hover > i { 
+  color: rgb(236, 63, 66);
+}
+
+.spotify {
+  padding-top: 200px;
+}
+
+@media(max-width: 1000px){
+
+  .article {    
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spotify iframe {
+    width: 80%;
+  }
+
+  .section2 a {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100px;
+    padding: 10px;     
+  }
+}
+
+/*-------------------- ART PAGE ---------------------*/
+
+.art-box {
+  height: 210px;
+  width: 100%;
+}
+
+.art-banner {
+  background-image: url(assets/img/nocolor.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.art-banner2 {
+  opacity: 0;
+  transition: 1.5s ease;
+
+  background-image: url(assets/img/color.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+} 
+
+.art-banner2:hover {
+  opacity: 1;
+}  
+
+.banner-name {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 20px;
+}
+
+.art-header {
+  width: 100%;
+  height: 45px;
+
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
+
+.art-navbar {
+  height: 100%;
+  background-color: rgb(20, 20, 20);
+  border-top: 1px solid rgb(125, 125, 125); 
+  border-bottom: 1px solid rgb(125, 125, 125); 
+}
+
+.art-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 43px; 
+}
+
+.art-navbar ul li {
+  list-style: none;
+  font-size: 20px;
+  
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.art-navbar li:hover { 
+  background-color: rgb(50, 50, 50);
+  color:rgb(63, 140, 236);
+}
+
+.art-navbar li:hover > i { 
+  color: rgb(236, 63, 66);
+}
+
+.art-navbar ul li.active {
+  color: rgb(236, 63, 66);
+  border-bottom: 4px solid rgb(63, 140, 236);
+} 
+
+.art-navbar li.active > i {
+  color: rgb(63, 140, 236);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.gallery .image {
+  cursor: pointer; 
+  width: calc(100% / 4);
+  max-height: 380px;
+  overflow: hidden;
+}
+
+.gallery .image.hide {
+  display: none;
+}
+
+.gallery .image img {
+  width: 100%;
+  vertical-align: middle;
+  transition: .2s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.preview-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); 
+  max-width: 700px;
+  width: 100%;
+  z-index: 100;
+  padding: 5px;
+  background-color: white;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all .2s ease;
+}
+
+.preview-box .image-box {
+  display: flex;
+  width: 100%;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+.preview-box .details {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+/* .preview-box .details .title {
+  display: flex;
+  font-size: 18px;
+} */
+
+.details .title p {
+  /* margin-left: 5px; */
+  font-size: 24px;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 99;
+
+  display: none;
+}
+
+.shadow.show {
+  display: block;
+}
+
+
+@media(max-width: 1000px){
+
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+
+  .art-navbar li {
+    float: none;
+    display: block;
+    line-height: 30px;
+
+  }
+
+  .art-header {
+    height: auto;   
+    top: 167px;   
+  }
+
+  .art-navbar a.active {
+    border-top: 2px solid rgb(63, 140, 236);
+    border-bottom: 2px solid rgb(236, 63, 66);
+  } 
+
+  .banner-name {
+    font-size: 60px;    
+    padding-top: 40px;
+  }
+}
+    
+/*-------------------- GAMES PAGE ---------------------*/
+
+.games-box {
+  height: 210px;
+  width: 100%;
+}
+
+.games-banner {
+  background-image: url(assets/img/nocolor.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.games-header {
+  width: 100%;
+  height: 45px;
+
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+}
+
+.games-navbar {
+  height: 100%;
+  background-color: black;
+  border-top: 1px solid rgb(125, 125, 125); 
+  border-bottom: 1px solid rgb(125, 125, 125); 
+}
+
+.games-page {
+  margin: 0 200px 0 200px;
+  border: 1px solid rgb(125, 125, 125);
+} 
+
+.collapsible {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  cursor: pointer;
+  padding: 20px 0 20px 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.collapsible:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  padding-right: 25px;
+  font-size: 25px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.game-image img {
+  width: 180px;
+  height: 180px;
+  float: left;  
+  border: 1px solid rgb(125, 125, 125);
+}
+
+.game-name {
+  padding-top: 40px;
+  margin-left: 250px;
+  text-align: left;      
+}
+
+.game-info {     
+  text-align: left;
+  padding: 10px 0 10px;
+  float: left;
+  color: rgb(236, 63, 66);
+}
+
+.game-info2 {    
+  text-align: left;
+  padding: 10px;
+  float: left;
+  color: rgb(63, 140, 236);
+}
+    
+.content {
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(20, 20, 20);      
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
+
+.content-description {
+  float: left;
+  padding: 10px 50px 20px 50px;
+  font-size: 20px;
+}
+
+.content-description h4 {
+  padding-top: 40px;     
+}
+
+.content-description p {
+  padding-top: 20px;     
+}
+
+.content-description button {
+  font-size: 22px;
+  background-color: rgb(236, 63, 66);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+.content-images {
+  float: left;
+  padding: 20px 0 20px 20px;
+}
+
+.content-images img {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  /* border: 1px solid rgb(63, 140, 236); */
+}
+
+@media(max-width: 1000px){
+
+  .games-header {   
+    top: 1250x;   
+  }
+
+  .games-page {
+    margin: 0;
+  } 
+
+  .collapsible {
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .collapsible:after {
+    padding-right: 5px;
+  }
+  
+  .game-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .game-name {
+    padding-top: 10px;
+    margin-left: 130px;    
+  }
+
+  .content-images {
+    padding: 20px 0 20px 20px;
+  }
+
+  .content-images img { 
+    height: 200px;
+    width: 333px;
+    margin: 10px auto 10px auto;
+  }
+
+}
+
+/*-------------------- CONTACT PAGE ---------------------*/
+
+.contact-box {  
+  padding: 50px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  background-color: rgb(20, 20, 20);
+}
+
+.contact-text {
+  padding-top: 40px;
+}
+
+.contact-info {
+  margin: 80px;
+  display: inline-flex;
+  font-size: 22px;
+  background-color: black;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  color:rgb(236, 63, 66);
+}
+
+.contact-info .fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(63, 140, 236);
+}
+
+.contact-info .fa:hover {
+  opacity: 0.7;
+}
+
+.contact-info p {
+  padding: 40px;
+}
+
+@media(max-width: 1000px){
+
+  .contact-box {    
+    font-size: 30px;
+  }
+
+  .contact-info {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px; 
+    font-size: 18px;
+  }
+
+  .contact-info p {
+    padding: 10px;
+  }
+
+}
+  
