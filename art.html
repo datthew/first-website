@@ -121,7 +121,7 @@
                     image[k].classList.remove('active');
                     image[k].classList.add('hide');
 
-                    if (image[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+                    if (image[k].getAttribute('data-item') === dataFilter || dataFilter === "all") {
                         image[k].classList.remove('hide');
                         image[k].classList.add('active');
                     }
@@ -141,7 +141,7 @@
         function preview(element) {
             // document.querySelector("body").style.overflow = "hidden";
             let selectedPrevImg = element.querySelector("img").src;
-            previewImg.src = selectedPrevImg;            
+            previewImg.src = selectedPrevImg;
             let selectedImgCategory = element.getAttribute("alt");
             categoryName.textContent = selectedImgCategory; 
 
